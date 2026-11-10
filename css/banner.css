@@ -13,7 +13,7 @@
   display: block;
   align-items: center;
   text-align: center;
-  padding-top: 10px;
+  padding-top: 30px;
   padding-bottom: 0;
 }
 
@@ -22,7 +22,7 @@
   top: -70px;
   width: 100%;
 
-  background-image: url('../imgs/banner.png');
+  background-image: url('../imgs/banner.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -41,7 +41,7 @@
 }
 
 .hero__title {
-  font-size: 22px;
+  font-size: 24px;
   margin-bottom: 10px;
 }
 

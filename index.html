@@ -4,38 +4,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#0b3a14" />
 
-    <title>Antique Collection</title>
+    <title>PUSH & PULL</title>
 
     <link
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap"
       rel="stylesheet"
     />
 
-    <link rel="icon" type="image/png" href="imgs/logo.png" sizes="32x32" />
-    <link rel="apple-touch-icon" href="imgs/logo.png" />
-
+    <link rel="icon" type="image/png" href="imgs/logo.webp" sizes="32x32" />
+    <link rel="apple-touch-icon" href="imgs/logo.webp" />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/layout.css" />
     <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="css/banner.css">
     <link rel="stylesheet" href="css/about.css">
     <link rel="stylesheet" href="css/service.css">
+    <link rel="stylesheet" href="css/slider.css">
     <link rel="stylesheet" href="css/footer.css">
-    
-    
-    
+  </head>
 
   <body>
     <header class="header">
       <div class="container header-inner">
         <div class="logo">
-          <img src="imgs/logo.png" width="50" height="50" alt="logo" />
+          <img src="imgs/logo.webp" width="50" height="50" alt="logo" />
           <!-- <span>Bazaar <span>Antiques & Collectables</span></span> -->
         </div>
 
         <nav class="nav" id="nav">
-          <a href="index.html">Home</a>
-          <a href="catalog.html">Catalog</a>
+          <a href="#work">Work</a>
+          <a href="#services">Service</a>
           <a href="#about">About</a>
           <a href="#contact">Contact</a>
         </nav>
@@ -48,7 +46,6 @@
       </div>
     </header>
     <div class="menu-overlay" id="menu-overlay"></div>
-
     
     <section class="hero">
       <div class="hero__overlay"></div>
@@ -69,56 +66,39 @@
         </div>
     </section>
 
-    <div class="about">
-
+    <div class="about" id="about">
       <div class="container">
         <h1>ABOUT</h1>
         <h3>PUSH & PULL</h3>
         
-        <div>
+        <div class="bout__wrapper">
           <div class="about__img-wrap">
-          <img src="imgs/me.jpg" alt="me">
-        </div>
+            <img src="imgs/me.jpg" alt="me">
+          </div>
           <p class="about__txt">
             Hi, I’m Hanna! With a background in sales and business and over 300 successful deals behind me, I understand how important it is to know your customers and communicate the value of what you offer. I created Push & Pull to help small businesses build their online presence, reach the right audience and attract more customers. I combine real business experience with digital marketing and a creative approach to help brands grow.
           </p>
         </div>
-          
         </div>
       </div>
     </div>
 
-
-    <section class="services" id="services">
-
+    <section class="services" id="services">  
         <div class="services__container container">
-
-          
-
-            <!-- IMAGE GALLERY -->
-            
-
                 <div class="services__image">
                     <img
-                        src="imgs/service.png"
+                        src="imgs/service.webp"
                         alt="Social media content creation"
                     >
                 </div>
-            
-
-            <!-- SERVICES CONTENT -->
             <div class="services__content">
-
                 <span class="services__eyebrow">
                     OUR SERVICES
                 </span>
-
                 <h2 class="services__title">
                     What we do
                 </h2>
-
                 <div class="services__list">
-
                     <article class="services__item">
                         <h3 class="services__item-title">
                             Social Media Management
@@ -128,7 +108,6 @@
                             and Facebook presence.
                         </p>
                     </article>
-
                     <article class="services__item">
                         <h3 class="services__item-title">
                             Content Creation
@@ -138,7 +117,6 @@
                             and creative content for your brand.
                         </p>
                     </article>
-
                     <article class="services__item">
                         <h3 class="services__item-title">
                             Digital Advertising
@@ -148,7 +126,6 @@
                             to reach potential customers.
                         </p>
                     </article>
-
                     <article class="services__item">
                         <h3 class="services__item-title">
                             Website Development & SEO
@@ -158,7 +135,6 @@
                             improving online visibility.
                         </p>
                     </article>
-
                     <article class="services__item">
                         <h3 class="services__item-title">
                             Marketing Strategy
@@ -168,29 +144,190 @@
                             and consultations tailored to your goals.
                         </p>
                     </article>
-
                 </div>
-
             </div>
-
         </div>
-
     </section>
 
 
-    <footer class="footer">
+    <section class="video-slider" id="work">
+        <div class="video-slider__container">
+            <div class="video-slider__header">
+                <span class="video-slider__eyebrow">OUR WORK</span>
+                <h2 class="video-slider__title">Ideas brought to life.</h2>
+                <p class="video-slider__txt">Every business has its own story. We create content and marketing campaigns that help brands connect with their audience and attract customers.</p>
+            </div>
+            <div class="video-slider__wrapper">
+                <button class="video-slider__arrow video-slider__arrow--prev"
+                        type="button"
+                        aria-label="Previous video">
+                    &#8592;
+                </button>
+                <div class="video-slider__viewport">
+                    <div class="video-slider__track">
+                        <div class="video-slider__slide">
+                            <video class="video-slider__video"
+                                  src="video/video1.mp4"
+                                  muted
+                                  playsinline
+                                  loop
+                                  controls
+                                  preload="metadata"></video>
+                        </div>
+                        <div class="video-slider__slide">
+                            <video class="video-slider__video"
+                                  src="video/video2.mp4"
+                                  muted
+                                  playsinline
+                                  loop
+                                  controls
+                                  preload="metadata"></video>
+                        </div>
+                        <div class="video-slider__slide">
+                            <video class="video-slider__video"
+                                  src="video/video3.mp4"
+                                  muted
+                                  playsinline
+                                  loop
+                                  controls
+                                  preload="metadata"></video>
+                        </div>
+                        <div class="video-slider__slide">
+                            <video class="video-slider__video"
+                                  src="video/video4.mp4"
+                                  muted
+                                  playsinline
+                                  loop
+                                  controls
+                                  preload="metadata"></video>
+                        </div>
+                    </div>
+                </div>
+                <button class="video-slider__arrow video-slider__arrow--next"
+                        type="button"
+                        aria-label="Next video">
+                    &#8594;
+                </button>
+            </div>
+            <div class="video-slider__dots"></div>
+        </div>
+    </section>
 
+    <section class="photo-slider">
+        <div class="photo-slider__container">
+            <div class="photo-slider__header">
+                <div class="photo-slider__intro">
+                    <span class="photo-slider__eyebrow">
+                        ADVERTISING RESULTS
+                    </span>
+                    <h2 class="photo-slider__title">
+                        Real results from our advertising campaigns.
+                    </h2>
+                    <div class="photo-slider__client">
+                        <span class="photo-slider__client-name">
+                            Only Skin Aesthetics
+                        </span>
+                        <span class="photo-slider__client-location">
+                            Mullingar, Ireland
+                        </span>
+                    </div>
+                    <span class="photo-slider__campaign">
+                        META ADVERTISING CAMPAIGN
+                    </span>
+                </div>
+                <!-- RESULTS -->
+                <div class="photo-slider__results">
+                    <div class="photo-slider__result">
+                        <span class="photo-slider__result-value">
+                            452
+                        </span>
+                        <span class="photo-slider__result-label">
+                            Ad Clicks
+                        </span>
+                    </div>
+                    <div class="photo-slider__result">
+                        <span class="photo-slider__result-value">
+                            5
+                        </span>
+                        <span class="photo-slider__result-label">
+                            Average Cost per Click
+                        </span>
+                    </div>
+                    <div class="photo-slider__result">
+                        <span class="photo-slider__result-value">
+                            €0.12
+                        </span>
+                        <span class="photo-slider__result-label">
+                            Consultation Bookings
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="photo-slider__wrapper">
+                <button class="photo-slider__arrow photo-slider__arrow--prev"
+                        type="button"
+                        aria-label="Previous photo">
+                    &#8592;
+                </button>
+                <div class="photo-slider__viewport">
+                    <div class="photo-slider__track">
+                        <div class="photo-slider__slide">
+                            <img src="imgs/ads/01-views.png" alt="Views, 107.6K">
+                        </div>
+                        <div class="photo-slider__slide">
+                            <img src="imgs/ads/02-reach.png" alt="Reach, 23.6K">
+                        </div>
+                        <div class="photo-slider__slide">
+                            <img src="imgs/ads/03-instagram-link-clicks.png" alt="Instagram link clicks, 1.5K">
+                        </div>
+                        <div class="photo-slider__slide">
+                            <img src="imgs/ads/04-content-interactions.png" alt="Content interactions, 569">
+                        </div>
+                        <div class="photo-slider__slide">
+                            <img src="imgs/ads/05-instagram-follows.png" alt="Instagram follows, 565">
+                        </div>
+                        <div class="photo-slider__slide">
+                            <img src="imgs/ads/06-instagram-visits.png" alt="Instagram profile visits, 3.5K">
+                        </div>
+                        <div class="photo-slider__slide">
+                            <img src="imgs/ads/07-views-facebook.png" alt="Views, 144.9K">
+                        </div>
+                        <div class="photo-slider__slide">
+                            <img src="imgs/ads/08-viewers.png" alt="Viewers, 36.9K">
+                        </div>
+                        <div class="photo-slider__slide">
+                            <img src="imgs/ads/09-facebook-visits.png" alt="Facebook visits, 3.7K">
+                        </div>
+                        <div class="photo-slider__slide">
+                            <img src="imgs/ads/10-facebook-link-clicks.png" alt="Facebook link clicks, 1.1K">
+                        </div>
+                        <div class="photo-slider__slide">
+                            <img src="imgs/ads/11-facebook-content-interactions.png" alt="Facebook content interactions, 319">
+                        </div>
+                        <div class="photo-slider__slide">
+                            <img src="imgs/ads/12-facebook-follows.png" alt="Facebook follows, 177">
+                        </div>
+                    </div>
+                </div>
+                <button class="photo-slider__arrow photo-slider__arrow--next"
+                        type="button"
+                        aria-label="Next photo">
+                    &#8594;
+                </button>
+            </div>
+            <div class="photo-slider__dots"></div>
+        </div>
+    </section>
+
+
+    <footer class="footer" id="contact">
         <div class="footer__container">
-
-            <!-- CONTACT -->
             <div class="footer__contact">
-
                 <h3 class="footer__heading">
                     CONTACT
                 </h3>
-
                 <div class="footer__links">
-
                     <a
                         class="footer__link"
                         href="mailto:push.pullmarketing@outlook.com"
@@ -200,7 +337,6 @@
                             push.pullmarketing@outlook.com
                         </span>
                     </a>
-
                     <a
                         class="footer__link"
                         href="https://www.instagram.com/push.pullmarketing/"
@@ -212,41 +348,28 @@
                             @push.pullmarketing
                         </span>
                     </a>
-
                     <div class="footer__link">
                         <span class="footer__label">Location</span>
                         <span class="footer__value">
                             Mullingar, Ireland
                         </span>
                     </div>
-
                 </div>
-
             </div>
 
             <!-- COPYRIGHT -->
             <div class="footer__bottom">
-
                 <a href="#" class="footer__logo">
                     PUSH <span>&</span> PULL
                 </a>
-
                 <p class="footer__copyright">
                     © 2026 PUSH & PULL
                 </p>
-
             </div>
-
         </div>
-
     </footer>
-
-
-    
-    
-
   
     <script src="js/header.js"></script>
- 
+    <script src="js/slider.js"></script>
   </body>
 </html>
