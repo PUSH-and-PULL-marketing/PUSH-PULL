@@ -1,0 +1,15 @@
+.about {
+  padding-top: 30px;
+}
+.about__img-wrap {
+  width: 100;
+}
+
+.about__img-wrap img {
+  width: 100%;
+  height: auto;
+}
+
+.about__txt {
+  padding-top: 10px;
+}
