@@ -334,10 +334,6 @@
 ========================= */
 
 @media (max-width: 768px) {
-  .video-slider,
-  .photo-slider {
-  }
-
   .video-slider__container,
   .photo-slider__container {
     padding: 0 16px;
@@ -359,9 +355,20 @@
 
   .video-slider__arrow,
   .photo-slider__arrow {
-    width: 36px;
+    top: 0;
+    bottom: 0;
+
+    margin-top: auto;
+    margin-bottom: auto;
+
+    transform: none;
+
     height: 36px;
-    font-size: 18px;
+    width: 36px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .video-slider__arrow--prev,
