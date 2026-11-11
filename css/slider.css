@@ -29,7 +29,7 @@
 .photo-slider__eyebrow {
   display: block;
   color: #c9a227;
-  font-size: 20px;
+  font-size: 12px;
   letter-spacing: 3px;
   font-weight: 600;
   margin-bottom: 12px;
@@ -37,9 +37,19 @@
 
 .video-slider__title,
 .photo-slider__title {
-  font-size: 18px;
-  color: #000000;
+  font-size: clamp(32px, 4vw, 52px);
+  line-height: 1.15;
+  font-weight: 600;
+  color: #c9a227;
+  margin: 0 0 16px;
+}
+
+.video-slider__txt {
+  max-width: 640px;
   margin: 0;
+  font-size: 17px;
+  line-height: 1.7;
+  color: #f3ead2;
 }
 
 /* PHOTO SLIDER HEADER */
@@ -96,12 +106,12 @@
 .photo-slider__client-name {
   font-size: 16px;
   font-weight: 600;
-  color: #222;
+  color: #f6f1df;
 }
 
 .photo-slider__client-location {
   font-size: 14px;
-  color: #888;
+  color: #e4d7a1;
 }
 
 .photo-slider__client-location::before {
@@ -183,6 +193,14 @@
   width: 100%;
   overflow: hidden;
   border-radius: 16px;
+  touch-action: pan-y;
+  cursor: grab;
+  user-select: none;
+}
+
+.video-slider__viewport:active,
+.photo-slider__viewport:active {
+  cursor: grabbing;
 }
 
 /* TRACK */
@@ -214,6 +232,7 @@
   object-fit: cover;
   background: #111;
   border-radius: 16px;
+  touch-action: pan-y;
 }
 
 /* ARROWS */
@@ -228,11 +247,12 @@
   width: 46px;
   height: 46px;
 
-  border: none;
   border-radius: 50%;
 
-  background: rgba(255, 255, 255, 0.9);
-  color: #222;
+  background: rgba(11, 58, 20, 0.9);
+  color: #f1cb4e;
+  border: 1px solid rgba(201, 162, 39, 0.55);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.28);
 
   font-size: 22px;
   cursor: pointer;
@@ -246,8 +266,8 @@
 
 .video-slider__arrow:hover,
 .photo-slider__arrow:hover {
-  background: #72966a;
-  color: #fff;
+  background: #c9a227;
+  color: #0b3a14;
 }
 
 .video-slider__arrow--prev,
@@ -280,7 +300,7 @@
   border: none;
   border-radius: 50%;
 
-  background: #000000;
+  background: rgba(201, 162, 39, 0.35);
   cursor: pointer;
 
   transition: all 0.3s ease;
@@ -304,6 +324,9 @@
   object-fit: contain;
   background: #fff;
   border-radius: 16px;
+  pointer-events: none;
+  -webkit-user-drag: none;
+  user-select: none;
 }
 
 /* =========================

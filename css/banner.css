@@ -19,20 +19,17 @@
 
 .hero__overlay {
   position: absolute;
-  top: -70px;
+  top: 0;
   width: 100%;
 
-  background-image: url('../imgs/banner.webp');
+  background-image: url('../imgs/banner-desk.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 
   z-index: -1;
   width: 100%;
-  height: 100vh;
-  height: 100svh;
-
-  min-height: 600px;
+  height: 100%;
 }
 
 .hero__content {
@@ -41,15 +38,38 @@
 }
 
 .hero__title {
-  font-size: 24px;
-  margin-bottom: 10px;
+  font-size: clamp(28px, 3.2vw, 48px);
+  line-height: 1.15;
+  margin-bottom: 12px;
+  color: #f1cb4e;
 }
 
 .hero__subtitle {
-  font-size: 18px;
-  margin-bottom: 0;
+  font-size: clamp(18px, 2vw, 26px);
+  line-height: 1.3;
+  margin-bottom: 10px;
+  color: #f6f1df;
 }
 
 .hero__description {
-  font-size: 16px;
+  max-width: 640px;
+  margin: 0 auto;
+  font-size: clamp(16px, 1.4vw, 18px);
+  line-height: 1.6;
+  color: #f3ead2;
+}
+
+@media (max-width: 768px) {
+  .hero__overlay {
+    position: absolute;
+    top: -70px;
+    width: 100%;
+
+    background-image: url('../imgs/banner.webp');
+
+    height: 100vh;
+    height: 100svh;
+
+    min-height: 600px;
+  }
 }

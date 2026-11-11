@@ -4,16 +4,13 @@ html {
 
 body {
   background: #0b3a14;
+  color: #c9a227;
   overflow-x: hidden;
 }
 
 a {
   color: #c9a227;
   text-decoration: none;
-}
-
-* {
-  color: #c9a227;
 }
 
 section {
