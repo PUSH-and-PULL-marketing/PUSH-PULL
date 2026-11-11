@@ -355,7 +355,7 @@
 
   .video-slider__arrow,
   .photo-slider__arrow {
-    top: 0;
+    top: -20px;
     bottom: 0;
 
     margin-top: auto;
